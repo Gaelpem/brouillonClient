@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 1rem;
+    min-height: 60vh;
+    width: 100%;
+}
+
+.header{
+    position: relative;
+    padding: 0 3%; /* Utilisez un pourcentage pour le padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-color: white;
+    min-height: 100%;
+    max-width: 100%;
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
+}
+
+.titre{
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+
+.link{
+    width: 100%;
+    max-width: 1500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link li{
+    color :rgb(0, 0, 0); 
+    list-style:none;
+    font-size: 1.3rem;
+}
+
+
+.contact{
+   margin-top: 3rem;
+   max-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+
+   /*border: 1px solid orange;*/
+}
+

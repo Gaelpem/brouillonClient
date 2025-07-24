@@ -1,0 +1,30 @@
+ .header-home{
+        margin: 0 auto ; 
+        position: relative;
+        padding: 0 1%; /* Utilisez un pourcentage pour le padding */
+        display: flex;
+        z-index: 10;    
+         width: 100%;
+        max-width: 1400px;
+        border-radius: 10px;
+        top: 1rem;
+        min-height: 100%;
+        background-color: rgb(90, 90, 90);
+        box-sizing: border-box; 
+         height: 550px;
+ }
+.home-link{
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    align-items: center;
+ 
+
+
+}
+.home-link li{
+    color :rgb(255, 255, 255); 
+    list-style: none;
+}
