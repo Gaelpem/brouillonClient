@@ -19,7 +19,7 @@ const Logo = () => {
   return (
     <div className={logoClass}>
    
-      <h1 style={{ fontSize : '3.5rem', 
+      <h1 style={{ fontSize : '1.8rem', 
                fontWeight : 400}}>Shtib.</h1>
     </div>
   );

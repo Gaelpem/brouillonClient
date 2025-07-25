@@ -3,6 +3,7 @@ import Logo from '../component/Logo';
 import Navigations from '../component/Navigations';
 import Informations from '../component/Informations';
 import Formulaire from '../component/Formulaire';
+import Footer from '../component/footer/Footer';
 
 const Contact = () => {
   return (
@@ -30,7 +31,7 @@ const Contact = () => {
         </div>
     
       </section>
-    
+      <Footer/>
     </div>
   );
 };

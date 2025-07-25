@@ -1,6 +1,5 @@
 import React from 'react';
 import Navigations from '../component/Navigations';
-import '../About.css'
 import Logo from '../component/Logo';
 
 const About = () => {

@@ -1,6 +1,5 @@
 import React from 'react';
 import Navigations from '../component/Navigations';
-import '../Home.css'
 import Logo from '../component/Logo';
 
 const Home = () => {

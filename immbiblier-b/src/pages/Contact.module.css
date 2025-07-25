@@ -2,21 +2,23 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    margin-top: 1rem;
+    margin-top: -1rem;
     min-height: 60vh;
     width: 100%;
 }
 
 .header{
+    padding: 1%;
     position: relative;
-    padding: 0 3%; /* Utilisez un pourcentage pour le padding */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     z-index: 10;
-    background-color: white;
     min-height: 100%;
     max-width: 100%;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
     box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
 }
 
@@ -28,7 +30,6 @@
 
 .link{
     width: 100%;
-    max-width: 1500px;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -36,9 +37,9 @@
 }
 
 .link li{
-    color :rgb(0, 0, 0); 
+    color :rgb(255, 255, 255); 
     list-style:none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 

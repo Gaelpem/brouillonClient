@@ -1,0 +1,28 @@
+.containerFooter{
+ margin-top: 5rem;
+ background-color: rgb(255, 255, 255);
+ max-height: 62vh;
+ border-radius: 10px;
+ padding: 2%;
+ overflow: hidden;
+ display: flex;
+ flex-direction: column;
+ gap: -10rem;
+}
+.logo .charac{
+    font-size: 25rem;
+    font-weight: 400;
+}
+
+.miniContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+   
+}
+
+.menuContainer{
+    display: flex;
+    flex-direction: column;
+}
+
