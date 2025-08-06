@@ -16,8 +16,18 @@ const ContactDrawer = ({onClose}) => {
 
     function handleSend(e){
         e.preventDefault()
+    
+   
+       
+       // on met le focus sur prenom car c'est le premier input
+       prenomRef.current.focus()
+       nomRef.current.focus()
+       emailRef.current.focus()
+       
+         //  On récupère les valeurs des champs
+       const prenom = prenomRef.current.value
         const nom = nomRef.current.value
-    const prenom = prenomRef.current.value
+ 
     const email = emailRef.current.value
 
     console.log( "Nom", nom);
@@ -55,22 +65,22 @@ const ContactDrawer = ({onClose}) => {
 
             <label htmlFor="prenom">Prénom</label>
 
-            <input type="text"  ref={prenomRef} idù="prenom" />
+            <input type="text"  ref={prenomRef} id="prenom" />
 
-            <label htmlFor="noom">Nom</label>
+            <label htmlFor="nom">Nom</label>
 
-            <input type="text"  ref={nomRef} idù="nom" />
+            <input type="text"  ref={nomRef} id="nom" />
 
-            <label htmlFor="noom">E-mail</label>
+            <label htmlFor="email">E-mail</label>
 
-            <input type="text"  ref={emailRef} idù="nom" />
+            <input type="text"  ref={emailRef} id="email" />
 
     
             </div>
              
              <div className={classes.btnContainer}>
                <div></div>
-               <button onClick={handleSend}>Send</button>
+               <button onClick={handleSend}>Envoyer</button>
                </div>
 
                

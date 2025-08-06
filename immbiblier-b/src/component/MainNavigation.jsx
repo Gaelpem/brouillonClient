@@ -23,7 +23,9 @@ const MainNavigation = () => {
                 <li>about</li>
             </nav>
 
-            <button className = {classes.btn} onClick={openContact}>contact US</button>
+            <button className = {classes.btn} onClick={openContact}>contact <span className={classes.changeColor}>US</span></button>
+
+            
             {showConctact && <ContactDrawer onClose={CloseContact}/>}
             
         </div>
