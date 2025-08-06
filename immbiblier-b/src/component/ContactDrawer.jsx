@@ -28,13 +28,25 @@ const ContactDrawer = ({onClose}) => {
 
 
      return createPortal(
-        <div className={classes.transparentDrop} onClick={onClose}>
+
+    
+    
+        <div className={classes.transparentDrop}>
+
+
 
         <aside className={classes.contact}>
-            
-           <h1>Contact-</h1>
+              
+              <div className={classes.btnContact}>
+              <h1>Contact-</h1>
 
-           <h2>Une demande particulère?<span className={classes.changeColor}>Parlons-en</span></h2>
+              <button onClick={onClose}>X</button>
+
+              </div>
+           
+
+           <h2>Une demande particulère?<span className={classes.changeColor}> Parlons-en.</span></h2>
+        
           
 
         <div className={classes.inputContainer}>
@@ -49,17 +61,19 @@ const ContactDrawer = ({onClose}) => {
 
             <input type="text"  ref={nomRef} idù="nom" />
 
-            <label htmlFor="noom">E-email</label>
+            <label htmlFor="noom">E-mail</label>
 
             <input type="text"  ref={emailRef} idù="nom" />
 
     
             </div>
              
-             <div className={classes.btn}>
+             <div className={classes.btnContainer}>
                <div></div>
                <button onClick={handleSend}>Send</button>
                </div>
+
+               
             
         </aside>
 
@@ -67,6 +81,7 @@ const ContactDrawer = ({onClose}) => {
         </div>, 
 
         document.getElementById('contact')
+       
      )
 };
 

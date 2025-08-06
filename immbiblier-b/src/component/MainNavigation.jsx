@@ -23,26 +23,31 @@ const MainNavigation = () => {
                 <li>about</li>
             </nav>
 
-            <button onClick={openContact}>contact</button>
+            <button className = {classes.btn} onClick={openContact}>contact US</button>
             {showConctact && <ContactDrawer onClose={CloseContact}/>}
             
         </div>
 
         <section className={classes.section1}>
 
-            <div className={classes.description}>
+       
                 <h2>Seigfried Vigier</h2>
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque deleniti libero expedita quaerat commodi non voluptas dolore. Quis exercitationem rem incidunt, error id dolore praesentium, maxime min</p>
-                
-            </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestiae, dolorum ipsam quam nam enim eos perferendis facere saepe tenetur sunt cum vel excepturi voluptatum cumque. Earum eligendi beatae odit.</p>
+
 
         </section>
 
         <section className={classes.section2}>
+        
 
-       <img src={img1}  alt="image" />
+         <div className={classes.imageWrapper}>
 
+           <img src={img1}  alt="image" />
+
+          <h1>Studio, Paris</h1>
+          <h3>75010 - rue des petites écuries </h3>
+     </div>
         </section>
 
         </>
