@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import classes from './MainNavigation.module.css'
 import ContactDrawer from './ContactDrawer';
 import img1  from '../assets/img1.jpg'; 
+import Heure from './Heure';
 
 const MainNavigation = () => {
      const [showConctact, setShowContact] = useState(false)
@@ -16,7 +17,10 @@ const MainNavigation = () => {
         <>
      
         <div className={classes.header}>
+           
             <h1 className={classes.logo}>Shtib.</h1>
+
+            <Heure/>
             <nav>
 
                 <li>home</li>
@@ -25,7 +29,7 @@ const MainNavigation = () => {
 
             <button className = {classes.btn} onClick={openContact}>contact <span className={classes.changeColor}>US</span></button>
 
-            
+
             {showConctact && <ContactDrawer onClose={CloseContact}/>}
             
         </div>

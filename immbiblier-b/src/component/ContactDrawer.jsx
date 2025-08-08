@@ -38,8 +38,6 @@ const ContactDrawer = ({onClose}) => {
 
 
      return createPortal(
-
-    
     
         <div className={classes.transparentDrop}>
 
@@ -82,9 +80,6 @@ const ContactDrawer = ({onClose}) => {
                <div></div>
                <button onClick={handleSend}>Envoyer</button>
                </div>
-
-               
-            
         </aside>
 
 
