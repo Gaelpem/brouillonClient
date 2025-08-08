@@ -14,13 +14,12 @@
     font-size: 4rem;
     font-weight: 500;
 }
-
-.btnContact{
+.btnEspace{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.btnContact button{
+.btnEspace button{
     background: transparent;
     border: none;
     font-weight: 100;
