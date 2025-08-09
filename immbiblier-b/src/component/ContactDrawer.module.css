@@ -46,7 +46,6 @@
     border: none;
     border-bottom: 1px solid black;
     font-size: 1rem;
-    
 }
 
 .inputContainer input:focus{
@@ -64,9 +63,20 @@
 .btnContainer button{
     background: transparent;
     border: none;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.3rem;
+    cursor: pointer;
 }
 
+.btnArrow {
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+    width: 6.1rem;
 
+}
 
+.btnArrow i{
+    rotate: 30deg;
+    font-size: 1rem;
+}

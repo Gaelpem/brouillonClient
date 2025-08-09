@@ -5,7 +5,7 @@ import classes from './ContactDrawer.module.css'
 const ContactDrawer = ({onClose}) => {
     // on cree 3 ref pour accéder à des element du DOM 
 
-    const [error,  setError] = useState(false)
+    const [error,  setError] = useState(true)
 
     const prenomRef = useRef()
     const nomRef = useRef()
@@ -13,7 +13,7 @@ const ContactDrawer = ({onClose}) => {
 
     function handleSend(e){
         e.preventDefault()
-    
+
        // on met le focus sur prenom car c'est le premier input
        prenomRef.current.focus()
  
@@ -23,7 +23,7 @@ const ContactDrawer = ({onClose}) => {
        const email = emailRef.current.value
      
        if(!prenom || !nom || !email){
-          setError(true)
+          setError(false)
        }
 
     console.log( "Nom", nom);
@@ -64,11 +64,18 @@ const ContactDrawer = ({onClose}) => {
              
              <div className={classes.btnContainer}>
                <div></div>
-               <button onClick={handleSend}>Envoyer</button>
-               </div>
-               {error && <p style={{color : "red"}}>Vous devez remplir tous les champs avant d'envoyer</p>}
-        </aside>
+                   
+                   <div className={classes.btnArrow}>
 
+               <button onClick={handleSend}>Envoyer
+               </button>
+               <i class="fa-solid fa-arrow-up-long"></i>
+                </div>
+
+               </div>
+               {!error && <p style={{color : "red",
+                fontWeight  : 300}}>Vous devez remplir tous les champs avant d'envoyer.</p>}
+        </aside>
 
         </div>, 
 
