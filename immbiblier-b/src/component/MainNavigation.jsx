@@ -10,12 +10,12 @@ const MainNavigation = () => {
      function openContact(){
         setShowContact(true)
      }
+     
      function CloseContact(){
         setShowContact(false)
      }
     return (
         <>
-     
         <div className={classes.header}>
            
             <h1 className={classes.logo}>Shtib.</h1>
@@ -35,7 +35,6 @@ const MainNavigation = () => {
         </div>
 
         <section className={classes.section1}>
-
        
                 <h2>Seigfried Vigier</h2>
 
@@ -49,10 +48,12 @@ const MainNavigation = () => {
 
          <div className={classes.imageWrapper}>
 
-           <img src={img1}  alt="image" />
-
+          <img src={img1}  alt="image" />
           <h1>Studio, Paris</h1>
           <h3>75010 - rue des petites écuries </h3>
+
+
+
      </div>
         </section>
 

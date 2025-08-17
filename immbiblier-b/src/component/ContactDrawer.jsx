@@ -69,7 +69,6 @@ const ContactDrawer = ({onClose}) => {
 
                <button onClick={handleSend}>Envoyer
                </button>
-               <i class="fa-solid fa-arrow-up-long"></i>
                 </div>
 
                </div>
