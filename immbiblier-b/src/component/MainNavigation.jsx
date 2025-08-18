@@ -3,6 +3,8 @@ import classes from './MainNavigation.module.css'
 import ContactDrawer from './ContactDrawer';
 import img1  from '../assets/img1.jpg'; 
 import Heure from './Heure';
+import Biens from './Biens.Jsx';
+
 
 const MainNavigation = () => {
      const [showConctact, setShowContact] = useState(false)
@@ -10,7 +12,7 @@ const MainNavigation = () => {
      function openContact(){
         setShowContact(true)
      }
-     
+
      function CloseContact(){
         setShowContact(false)
      }
@@ -55,6 +57,9 @@ const MainNavigation = () => {
 
 
      </div>
+        </section>
+        <section className={classes.section3}>
+            <Biens/>
         </section>
 
         </>
