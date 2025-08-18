@@ -4,6 +4,7 @@ import ContactDrawer from './ContactDrawer';
 import img1  from '../assets/img1.jpg'; 
 import Heure from './Heure';
 import Biens from './Biens.Jsx';
+import Footer from './Footer';
 
 
 const MainNavigation = () => {
@@ -61,6 +62,10 @@ const MainNavigation = () => {
         <section className={classes.section3}>
             <Biens/>
         </section>
+
+        <footer>
+            <Footer/>
+        </footer>
 
         </>
 
