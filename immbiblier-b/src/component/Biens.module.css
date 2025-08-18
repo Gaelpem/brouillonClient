@@ -42,6 +42,14 @@
    flex-direction: column;
   }
 
+  .localisationDescrip button{
+    background: transparent;
+    border: none;
+    display: flex;
+
+
+  }
+
   .bienContainer li:nth-child(odd){
     flex-direction: row-reverse;
   } 

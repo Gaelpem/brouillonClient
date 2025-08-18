@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import classes from './Biens.module.css'
+import BiensDrawer from './BiensDrawer';
 
 export const biens = [
     { id: 1,location: "Paris, France",description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quas assumenda commodi cumque exercitationem ab nam, nihil, rerumrepellendus  saepe.",
@@ -15,8 +16,17 @@ export const biens = [
 
 
 const Biens = () => {
-  
-    
+   
+    const [showBien, setShow] =  useState(false)
+
+    function openBien(){
+        setShow(true)
+    }
+
+    function CloseBien(){
+        setShow(false)
+    }
+
     const [biens2] = useState(biens); 
 
      
@@ -40,16 +50,30 @@ const Biens = () => {
                                 <h1>Localisation</h1>
                                 <h2>{bien.location}</h2>
                                </div>
+
+                             
                                <div className={classes.description}>
                                 {bien.description}
                                </div>
+
+                               <button onClick={openBien}>[Voir plus...]</button>
+                          
                         </div>
 
 
                     </li>
                   ))}
                 </ul>
-            
+
+                {showBien && (
+        <BiensDrawer
+          bien={showBien}
+          onClose={CloseBien}
+        />
+      )}
+ 
+
+                
         </div>
     );
 };
