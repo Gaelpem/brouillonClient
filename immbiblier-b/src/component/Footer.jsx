@@ -21,7 +21,7 @@ const Footer = () => {
                          <h1>Contact</h1>
                         <p>e-mail: seigfried@gmail.com</p>
                         <p>tél: +33 7 99 88 11 22</p>
-                        <p>pfaris, France</p>
+                        <p>Paris, France</p>
                         </div>
 
                 </div>

@@ -10,3 +10,7 @@ li{
     font-weight: 400;
     cursor: pointer;
 }
+
+button{
+    cursor: pointer;
+}
