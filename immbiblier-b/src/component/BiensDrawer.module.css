@@ -8,6 +8,7 @@
     width: 100vw;
     padding: 2.5rem 2rem ;
     background-color: white;
+    overflow: none;
 }
 
 .header{
@@ -31,10 +32,25 @@
    display: flex;
    justify-content:  space-between;
    margin-top: 2rem;
+
 }
 
 
 .description{
    width: 35%;
 
+
 }
+.image{
+    width: 700px;
+    height: 400px;
+
+
+}
+
+.image img{
+    width:100%;
+    object-fit:cover; 
+    height:100%;
+}
+

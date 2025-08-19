@@ -38,7 +38,7 @@ const Biens = () => {
                 {bien.description}
               </div>
 
-              {/*  on passe le bine cliqué */}
+              {/*  on passe le bien cliqué */}
               <button onClick={() => openBien(bien)}>[Voir plus...]</button>
             </div>
           </li>
