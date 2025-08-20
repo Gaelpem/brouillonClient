@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
 import classes from './Biens.module.css';
 import BiensDrawer from './BiensDrawer';
+import biens from './biens.json'; 
 
-export const biens = [
-  { id: 1, location: "Paris, France", description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum eveniet ipsum dolorum deleniti quod commodi quos fugit dolor repellendus modi? Itaque ad dolorum eligendi architecto ratione illum aliquam. Incidunt, tempora!", image: "/img/app1.jpg", image1 : "/img/app1.jpg" },
-  { id: 2, location: "Nice, France",  description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum eveniet ipsum dolorum deleniti quod commodi quos fugit dolor repellendus modi? Itaque ad dolorum eligendi architecto ratione illum aliquam. Incidunt, tempora!", image: "/img/app2.jpg",image1 :"/img/app2.jpg" },
-  { id: 3, location: "Paris, France", description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum eveniet ipsum dolorum deleniti quod commodi quos fugit dolor repellendus modi? Itaque ad dolorum eligendi architecto ratione illum aliquam. Incidunt, tempora!", image: "/img/app3.jpg",image1: "/img/app3.jpg" },
-];
+
 
 const Biens = () => {
   const [biens2] = useState(biens);
