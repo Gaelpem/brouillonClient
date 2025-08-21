@@ -16,8 +16,18 @@ const BiensDrawer = ({ bien, onClose }) => {
         <section className={classes.imgDescription}>
 
           <div className={classes.image}>
-            <img src={bien.image}/>
-            <img src={bien.image1}/>
+
+           <div className={classes.imgPrincipal}>
+           <img src={bien.image}/>
+           </div>
+             
+             <div className={classes.items}>
+             <img src={bien.image1}  />
+             <img src={bien.image1}  />
+             <img src={bien.image1}  />
+             </div>
+
+
           </div>
 
           <div className={classes.description}>

@@ -26,6 +26,7 @@ const Biens = () => {
             </div>
 
             <div className={classes.localisationDescrip}>
+              
              <div className={classes.localisation}>
                 <h1>Localisation</h1>
                 <h2>{bien.location}</h2>

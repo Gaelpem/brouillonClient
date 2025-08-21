@@ -7,8 +7,8 @@
     height: 100vh;
     width: 100vw;
     padding: 2.5rem 2rem ;
-    background-color: white;
-    overflow: none;
+    background-color: rgb(255, 255, 255);
+ 
 }
 
 .header{
@@ -32,25 +32,41 @@
    display: flex;
    justify-content:  space-between;
    margin-top: 2rem;
-
+   height: 100%;
+  
 }
 
 
 .description{
    width: 35%;
-
-
 }
 .image{
-    width: 700px;
-    height: 400px;
-
-
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 500px;
 }
+.imgPrincipal{
+   width: 700px;
+   height: 100%;
+}
+.items{
+
+   display: flex;
+   justify-content: space-between;
+   width:700px;
+   height: 200px;
+   margin-top: 3.5rem;
+}
+
+.items img{
+    max-width: 200px;
+    object-fit:cover;
+}
+
 
 .image img{
     width:100%;
     object-fit:cover; 
     height:100%;
 }
-
