@@ -23,8 +23,8 @@ const BiensDrawer = ({ bien, onClose }) => {
              
              <div className={classes.items}>
              <img src={bien.image1}  />
-             <img src={bien.image1}  />
-             <img src={bien.image1}  />
+             <img src={bien.image2}  />
+             <img src={bien.image3}  />
              </div>
 
 

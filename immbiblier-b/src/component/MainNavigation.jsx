@@ -39,7 +39,7 @@ const MainNavigation = () => {
 
         <section className={classes.section1}>
        
-                <h2>Seigfried Vigier</h2>
+                <h1>Seigfried Vigier</h1>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestiae, dolorum ipsam quam nam enim eos perferendis facere saepe tenetur sunt cum vel excepturi voluptatum cumque. Earum eligendi beatae odit.</p>
 
