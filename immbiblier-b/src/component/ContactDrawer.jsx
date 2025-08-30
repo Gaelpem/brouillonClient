@@ -26,9 +26,6 @@ const ContactDrawer = ({onClose}) => {
           setError(false)
        }
 
-    console.log( "Nom", nom);
-    console.log("Prenom", prenom);
-    console.log("email", email);
     }
 
   
