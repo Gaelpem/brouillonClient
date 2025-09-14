@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import classes from './MainNavigation.module.css'
 import ContactDrawer from './ContactDrawer';
-import img1  from '../assets/img1.jpg'; 
+
 import Heure from './Heure';
-import Biens from './Biens.Jsx';
-import Footer from './Footer';
+
+import { NavLink } from 'react-router-dom';
+
 
 
 const MainNavigation = () => {
@@ -19,15 +20,14 @@ const MainNavigation = () => {
      }
     return (
         <>
-        <div className={classes.header}>
+        <header className={classes.header}>
            
             <h1 className={classes.logo}>Shtib.</h1>
 
             <Heure/>
             <nav>
+               <NavLink to = "/" className={classes.link}>home</NavLink>
 
-                <li className={classes.link}><a href="#">home</a></li>
-                <li className={classes.link}><a href="#">about</a></li>
             </nav>
 
             <button className = {classes.btn} onClick={openContact}>contact <span className={classes.changeColor}>US</span></button>
@@ -35,37 +35,7 @@ const MainNavigation = () => {
 
             {showConctact && <ContactDrawer onClose={CloseContact}/>}
             
-        </div>
-
-        <section className={classes.section1}>
-       
-                <h1> Seigfried Vigier</h1>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestiae, dolorum ipsam quam nam enim eos perferendis facere saepe tenetur sunt cum vel excepturi voluptatum cumque. Earum eligendi beatae odit.</p>
-
-
-        </section>
-
-        <section className={classes.section2}>
-        
-
-         <div className={classes.imageWrapper}>
-
-          <img src={img1}  alt="image" />
-          <h1>Studio, Paris</h1>
-          <h3>75010 - rue des petites écuries </h3>
-
-
-
-     </div>
-        </section>
-        <section className={classes.section3}>
-            <Biens/>
-        </section>
-
-        <footer>
-            <Footer/>
-        </footer>
+        </header>
 
         </>
 
