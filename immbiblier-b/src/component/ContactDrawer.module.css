@@ -23,11 +23,12 @@
     background: transparent;
     border: none;
     font-weight: 100;
-    font-size: 1.3rem;
+    font-size: 2.5rem;
+    margin-top: -8rem;
 }
 
 .contact h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 300;
 } 
 

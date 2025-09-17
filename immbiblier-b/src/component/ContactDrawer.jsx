@@ -38,7 +38,7 @@ const ContactDrawer = ({onClose}) => {
 
             <div className={classes.btnEspace}>
             <div></div>
-        <button onClick={onClose}>[X]</button>
+        <button onClick={onClose}>X</button>
                </div>
                <h1>Contact-</h1>
                <h2>Une demande particulère?<span className={classes.changeColor}> Parlons-en.</span></h2>

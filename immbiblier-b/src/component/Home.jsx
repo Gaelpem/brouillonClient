@@ -2,8 +2,10 @@ import React from 'react';
 
 import Footer from './Footer';
 import Biens from '../pages/biens';
+import biensData from '../data/biens.json';
 import img1  from '../assets/img1.jpg'; 
 import classes from './Home.module.css'
+import BiensList from '../pages/BiensList';
 
 const Home = () => {
     return (
@@ -26,7 +28,7 @@ const Home = () => {
        </section>
 
        <section className={classes.section3}>
-           <Biens/>
+           <BiensList biens = {biensData}/>
         </section>
 
 
