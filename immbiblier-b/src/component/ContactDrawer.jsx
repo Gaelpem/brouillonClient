@@ -32,9 +32,8 @@ const ContactDrawer = ({onClose}) => {
      return createPortal(
     
         <div className={classes.transparentDrop}>
-    
-        <aside className={classes.contact}>
 
+        <aside className={classes.contact}>
 
             <div className={classes.btnEspace}>
             <div></div>
@@ -42,6 +41,7 @@ const ContactDrawer = ({onClose}) => {
                </div>
                <h1>Contact-</h1>
                <h2>Une demande particulère?<span className={classes.changeColor}> Parlons-en.</span></h2>
+               
                <div className={classes.inputContainer}>
 
             <label htmlFor="prenom">Prénom</label>

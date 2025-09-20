@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Footer from './Footer';
-import Biens from '../pages/biens';
 import biensData from '../data/biens.json';
 import img1  from '../assets/img1.jpg'; 
 import classes from './Home.module.css'
@@ -12,7 +11,7 @@ const Home = () => {
         <>
 
        <section className={classes.section1}>
-       <h1>Seigfried Vigier</h1>
+       <h1>| Seigfried Vigier |</h1>
        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestiae, dolorum ipsam quam nam enim eos perferendis facere saepe tenetur sunt cum vel excepturi voluptatum cumque. Earum eligendi beatae odit.</p>
       </section>
 

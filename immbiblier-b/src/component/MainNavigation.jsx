@@ -27,7 +27,6 @@ const MainNavigation = () => {
             <Heure/>
             <nav>
                <NavLink to = "/" className={classes.link}>home</NavLink>
-
             </nav>
 
             <button className = {classes.btn} onClick={openContact}>contact <span className={classes.changeColor}>US</span></button>
